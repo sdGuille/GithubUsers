@@ -56,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CF8E35732A34DF94006EAAD0 /* App */,
+				CF8E35752A34DFB3006EAAD0 /* Model */,
 				CF8E35772A34DFCA006EAAD0 /* View */,
 				CF8E35762A34DFBD006EAAD0 /* ViewModel */,
-				CF8E35752A34DFB3006EAAD0 /* Model */,
 				CF8E35692A34DD62006EAAD0 /* Assets.xcassets */,
 				CF8E356B2A34DD62006EAAD0 /* Preview Content */,
 			);
