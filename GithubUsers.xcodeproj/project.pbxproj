@@ -13,6 +13,7 @@
 		CF8E356D2A34DD62006EAAD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E356C2A34DD62006EAAD0 /* Preview Assets.xcassets */; };
 		CF8E35792A34F17A006EAAD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35782A34F17A006EAAD0 /* User.swift */; };
 		CF8E357B2A34F518006EAAD0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357A2A34F518006EAAD0 /* UserViewModel.swift */; };
+		CF8E357E2A355E81006EAAD0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357D2A355E81006EAAD0 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CF8E356C2A34DD62006EAAD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF8E35782A34F17A006EAAD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CF8E357A2A34F518006EAAD0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CF8E357D2A355E81006EAAD0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,18 @@
 		CF8E35772A34DFCA006EAAD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF8E357C2A355E23006EAAD0 /* Helpers */,
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CF8E357C2A355E23006EAAD0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E357D2A355E81006EAAD0 /* Profile.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
+				CF8E357E2A355E81006EAAD0 /* Profile.swift in Sources */,
 				CF8E357B2A34F518006EAAD0 /* UserViewModel.swift in Sources */,
 				CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */,
 				CF8E35792A34F17A006EAAD0 /* User.swift in Sources */,
