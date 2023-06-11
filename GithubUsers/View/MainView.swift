@@ -9,18 +9,18 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
+    @State private var search = ""
     
     var body: some View {
         NavigationView {
             VStack {
                 List(viewModel.users) { user in
-                    Label(
-                        title: { Text(user.login) },
-                        icon: { /*@START_MENU_TOKEN@*/Image(systemName: "42.circle")/*@END_MENU_TOKEN@*/ }
-                    )
+                    Profile(image: user.avatar_url, title: user.login)
                 }
             }
             .navigationTitle("Github Users")
+            .searchable(text: $search)
+            .textInputAutocapitalization(.none)
         }
     }
 }
