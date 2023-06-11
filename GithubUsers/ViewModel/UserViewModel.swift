@@ -9,6 +9,7 @@ import Foundation
 
 class MainViewModel: ObservableObject {
     @Published var users = [User]()
+    @Published var error: Error?
     
     var urlString: String {
         return "https://api.github.com/users"
@@ -22,17 +23,17 @@ class MainViewModel: ObservableObject {
 extension MainViewModel {
     @MainActor
     func fetchUsersAsync() async throws {
-        guard let url = URL(string: urlString) else {
-            print("DEBUG: Invalid URL")
-            return
+        do {
+            guard let url = URL(string: urlString) else { throw CustomError.invalidURL }
+            
+            let (data, response) = try await URLSession.shared.data(from: url)
+            guard (response as?  HTTPURLResponse)?.statusCode == 200 else { throw CustomError.serverError }
+            guard let users = try? JSONDecoder().decode([User].self, from: data) else { throw CustomError.invalidData }
+            self.users = users
+            
+        } catch {
+            self.error = error
         }
-        
-        let (data, response) = try await URLSession.shared.data(from: url)
-        guard (response as?  HTTPURLResponse)?.statusCode == 200 else { return }
-        guard let users = try? JSONDecoder().decode([User].self, from: data) else { return }
-        self.users = users
-        
-        
     }
     
     func loadData() {
