@@ -12,5 +12,7 @@ struct User: Codable, Identifiable {
     var login: String
     var avatar_url: String
     var repos_url: String
+    var type: String
+    var site_admin: Bool
     var html_url: String
 }
