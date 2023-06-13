@@ -20,7 +20,7 @@ struct MainView: View {
                 }
                 
             }
-            .searchable(text: $viewModel.searchText, prompt: "Search users")
+//            .searchable(text: $viewModel.searchText, prompt: "Search users")
             .navigationTitle("Github Users")
             
         }
