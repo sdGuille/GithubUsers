@@ -12,12 +12,11 @@ class MainViewModel: ObservableObject {
     @Published var error: Error?
     @Published var searchText = ""
     
-    var filteredUsers: [String] {
-        let array = users.map { $0.login }
-        guard !searchText.isEmpty else { return array }
+    var filteredUsers: [User] {
+        guard !searchText.isEmpty else { return users }
         
-        return array.filter { user in
-            user.lowercased().contains(searchText.lowercased())
+        return users.filter { user in
+            user.login.lowercased().contains(searchText.lowercased())
         }
     }
     
