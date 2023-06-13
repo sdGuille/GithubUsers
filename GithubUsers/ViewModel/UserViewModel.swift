@@ -11,15 +11,8 @@ class MainViewModel: ObservableObject {
     @Published var users = [User]()
     @Published var error: Error?
     @Published var searchText = ""
-    
-    var filteredUsers: [User] {
-        guard !searchText.isEmpty else { return users }
-        
-        return users.filter { user in
-            user.login.lowercased().contains(searchText.lowercased())
-        }
-    }
-    
+
+
 
 //    var searchResult: [String] {
 ////        let results = users.map { $0.login.lowercased() }
@@ -74,3 +67,17 @@ extension MainViewModel {
         }
     }
 }
+
+
+extension MainViewModel {
+    var filteredUsers: [User] {
+        let searchText = self.searchText.lowercased() // Asegúrate de tener una propiedad @Published searchText en tu vista
+        
+        if searchText.isEmpty {
+            return users
+        } else {
+            return users.filter { $0.login.lowercased().contains(searchText) }
+        }
+    }
+}
+

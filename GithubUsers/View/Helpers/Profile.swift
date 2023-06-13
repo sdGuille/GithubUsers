@@ -34,6 +34,10 @@ struct Profile: View {
     }
 }
 
-#Preview {
-    Profile(image: "https://avatars.githubusercontent.com/u/86071679?v=4", title: "sdGuille")
+struct Profile_Previews: PreviewProvider {
+    static var previews: some View {
+        Profile(image: "https://avatars.githubusercontent.com/u/86071679?v=4",
+                title: "sdGuille"
+        )
+    }
 }
