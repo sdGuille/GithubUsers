@@ -9,26 +9,20 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
-    @State private var searchText = ""
-//    @State private var showAlert = false
     
     var body: some View {
         NavigationStack {
-            List(viewModel.users, id: \.self) { user in
+            List(viewModel.filteredUsers) { user in
                 Profile(image: user.avatar_url, title: user.login)
-                
             }
-            .searchable(text: $viewModel.searchText, prompt: "Search users")
             .navigationTitle("Github Users")
+            .searchable(text: $viewModel.searchText, prompt: "Search Users")
+            .task { viewModel.loadData() }
         }
-//        .onReceive(viewModel.$error, perform: { error in
-//            if error != nil {
-//                showAlert.toggle()
-//            }
-//        })
     }
     
 }
+
 
 struct Mainview_Previews: PreviewProvider {
     static var previews: some View {
