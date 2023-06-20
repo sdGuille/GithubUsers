@@ -12,9 +12,11 @@
 		CF8E356A2A34DD62006EAAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E35692A34DD62006EAAD0 /* Assets.xcassets */; };
 		CF8E356D2A34DD62006EAAD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E356C2A34DD62006EAAD0 /* Preview Assets.xcassets */; };
 		CF8E35792A34F17A006EAAD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35782A34F17A006EAAD0 /* User.swift */; };
-		CF8E357B2A34F518006EAAD0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357A2A34F518006EAAD0 /* UserViewModel.swift */; };
+		CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */; };
 		CF8E357E2A355E81006EAAD0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357D2A355E81006EAAD0 /* Profile.swift */; };
 		CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357F2A356CA2006EAAD0 /* CustomError.swift */; };
+		CFA99A612A423F4200F65070 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA99A602A423F4200F65070 /* UserDetailView.swift */; };
+		CFA99A632A42491100F65070 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA99A622A42491100F65070 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +26,11 @@
 		CF8E35692A34DD62006EAAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF8E356C2A34DD62006EAAD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF8E35782A34F17A006EAAD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CF8E357A2A34F518006EAAD0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CF8E357D2A355E81006EAAD0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CF8E357F2A356CA2006EAAD0 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		CFA99A602A423F4200F65070 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		CFA99A622A42491100F65070 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,7 @@
 		CF8E35762A34DFBD006EAAD0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CF8E357A2A34F518006EAAD0 /* UserViewModel.swift */,
+				CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -107,6 +111,7 @@
 			children = (
 				CF8E357C2A355E23006EAAD0 /* Helpers */,
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
+				CFA99A602A423F4200F65070 /* UserDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8E357D2A355E81006EAAD0 /* Profile.swift */,
+				CFA99A622A42491100F65070 /* CircleImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
+				CFA99A632A42491100F65070 /* CircleImage.swift in Sources */,
 				CF8E357E2A355E81006EAAD0 /* Profile.swift in Sources */,
-				CF8E357B2A34F518006EAAD0 /* UserViewModel.swift in Sources */,
+				CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */,
 				CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */,
+				CFA99A612A423F4200F65070 /* UserDetailView.swift in Sources */,
 				CF8E35792A34F17A006EAAD0 /* User.swift in Sources */,
 				CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */,
 			);
