@@ -21,12 +21,13 @@ struct Profile: View {
                 .frame(width: 75, height: 75)
                 .clipShape(Circle())
                 .overlay {
-                    Circle().stroke(.white, lineWidth: 4)
+                    Circle().stroke(.white, lineWidth: 1)
                 }
-                .shadow(radius: 7)
+                .shadow(radius: 3)
                 .padding()
             Text(title)
-                .font(.subheadline.bold())
+                .font(.title3)
+                .fontWeight(.medium)
                 .padding()
             Spacer()
             
