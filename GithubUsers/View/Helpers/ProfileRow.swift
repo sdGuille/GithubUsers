@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Profile: View {
+struct ProfileRow: View {
     let image: String
     let title: String
     
@@ -37,7 +37,7 @@ struct Profile: View {
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile(image: "https://avatars.githubusercontent.com/u/86071679?v=4",
+        ProfileRow(image: "https://avatars.githubusercontent.com/u/86071679?v=4",
                 title: "sdGuille"
         )
     }
