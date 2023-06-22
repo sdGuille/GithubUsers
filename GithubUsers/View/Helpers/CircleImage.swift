@@ -16,7 +16,7 @@ struct CircleImage: View {
         } placeholder: {
             ProgressView()
         }
-        .frame(width: 200, height: 200)
+        .frame(width: 300, height: 300)
         .clipShape(Circle())
         .overlay {
             Circle().stroke(.white, lineWidth: 4)
