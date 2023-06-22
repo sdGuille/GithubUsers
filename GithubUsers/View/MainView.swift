@@ -9,11 +9,15 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
+    @State private var isPresented = false
     
     var body: some View {
         NavigationStack {
             List(viewModel.filteredUsers) { user in
-                Profile(image: user.avatar_url, title: user.login)
+                ProfileRow(image: user.avatar_url, title: user.login)
+                    .fullScreenCover(isPresented: $isPresented, content: {
+                        UserDetailView.init(user: user)
+                    })
             }
             .navigationTitle("Github Users")
             .searchable(text: $viewModel.searchText, prompt: "Search Users")
