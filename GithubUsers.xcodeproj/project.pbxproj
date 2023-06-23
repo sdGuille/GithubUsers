@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF1EED972A45472800DAABB7 /* WebProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebProfileView.swift; path = GithubUsers/View/WebProfileView.swift; sourceTree = SOURCE_ROOT; };
+		CF1EED972A45472800DAABB7 /* WebProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebProfileView.swift; path = GithubUsers/View/Helpers/WebProfileView.swift; sourceTree = SOURCE_ROOT; };
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 			children = (
 				CF8E357C2A355E23006EAAD0 /* Helpers */,
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
-				CF1EED972A45472800DAABB7 /* WebProfileView.swift */,
 				CFA99A602A423F4200F65070 /* UserDetailView.swift */,
 				CF1EED992A454CD100DAABB7 /* WebView.swift */,
 			);
@@ -125,6 +124,7 @@
 		CF8E357C2A355E23006EAAD0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CF1EED972A45472800DAABB7 /* WebProfileView.swift */,
 				CF8E357D2A355E81006EAAD0 /* ProfileRow.swift */,
 				CFA99A622A42491100F65070 /* CircleImage.swift */,
 			);
