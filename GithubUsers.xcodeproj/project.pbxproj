@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CF1EED982A45472800DAABB7 /* WebProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED972A45472800DAABB7 /* WebProfileView.swift */; };
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
+		CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9B2A455F9500DAABB7 /* Repo.swift */; };
+		CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */; };
+		CF1EEDA02A45F8C300DAABB7 /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */; };
 		CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */; };
 		CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35672A34DD61006EAAD0 /* MainView.swift */; };
 		CF8E356A2A34DD62006EAAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E35692A34DD62006EAAD0 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		CF1EED972A45472800DAABB7 /* WebProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebProfileView.swift; path = GithubUsers/View/Helpers/WebProfileView.swift; sourceTree = SOURCE_ROOT; };
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CF1EED9B2A455F9500DAABB7 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		CF8E35672A34DD61006EAAD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			children = (
 				CF8E35782A34F17A006EAAD0 /* User.swift */,
 				CF8E357F2A356CA2006EAAD0 /* CustomError.swift */,
+				CF1EED9B2A455F9500DAABB7 /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */,
+				CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
 				CFA99A602A423F4200F65070 /* UserDetailView.swift */,
 				CF1EED992A454CD100DAABB7 /* WebView.swift */,
+				CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */,
+				CF1EEDA02A45F8C300DAABB7 /* RepoView.swift in Sources */,
+				CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
 				CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */,
 				CFA99A632A42491100F65070 /* CircleImage.swift in Sources */,
