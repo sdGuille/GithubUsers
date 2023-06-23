@@ -26,7 +26,10 @@ struct MainView: View {
                 }
             })
             .alert(isPresented: $showAlert, content: {
-                Alert(title: Text("Error"), message: Text(viewModel.error?.localizedDescription ?? ""), dismissButton: .cancel())
+                Alert(title: Text("Error"),
+                      message: Text(viewModel.error?.localizedDescription ?? ""),
+                      dismissButton: .default(Text("OK"))
+                )
             })
         }
     }
