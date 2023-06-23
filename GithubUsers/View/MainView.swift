@@ -14,7 +14,9 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             List(viewModel.filteredUsers) { user in
-                ProfileRow(image: user.avatar_url, title: user.login)
+                NavigationLink(destination: WebProfileView(profileLink: user.html_url)) {
+                    ProfileRow(image: user.avatar_url, title: user.login)
+                }
             }
             
             .refreshable {
