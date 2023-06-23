@@ -16,6 +16,11 @@ struct MainView: View {
             List(viewModel.filteredUsers) { user in
                 ProfileRow(image: user.avatar_url, title: user.login)
             }
+            
+            .refreshable {
+                viewModel.handleRefresh()
+            }
+            
             .navigationTitle("Github Users")
             .searchable(text: $viewModel.searchText, prompt: "Search Users")
             .task { viewModel.loadData() }
@@ -25,12 +30,15 @@ struct MainView: View {
                     showAlert.toggle()
                 }
             })
-            .alert(isPresented: $showAlert, content: {
-                Alert(title: Text("Error"),
-                      message: Text(viewModel.error?.localizedDescription ?? ""),
-                      dismissButton: .default(Text("OK"))
-                )
-            })
+            .alert(
+                isPresented: $showAlert,
+                content: {
+                    Alert(title: Text("Error"),
+                          message: Text(viewModel.error?.localizedDescription ?? ""),
+                          dismissButton: .default(Text("OK"))
+                    )
+                }
+            )
         }
     }
 }

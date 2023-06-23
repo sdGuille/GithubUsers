@@ -24,6 +24,11 @@ class MainViewModel: ObservableObject {
     init() {
         loadData()
     }
+    
+    func handleRefresh() {
+        myUsers.removeAll()
+        loadData()
+    }
 }
 
 extension MainViewModel {
