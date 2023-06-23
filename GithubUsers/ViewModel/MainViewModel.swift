@@ -10,7 +10,7 @@ import Foundation
 class MainViewModel: ObservableObject {
     @Published var error: Error?
     @Published var searchText = ""
-    @Published private var myUsers: [User] = []
+    @Published var myUsers: [User] = []
     
     var filteredUsers: [User] {
         guard !searchText.isEmpty else { return myUsers }
