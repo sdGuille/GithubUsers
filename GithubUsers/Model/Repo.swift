@@ -12,10 +12,11 @@ struct Repo: Codable, Identifiable {
     let name: String
     let html_url: String
     let description: String?
-    let owner: [Owner]
+    let owner: Owner
 }
 
 struct Owner: Codable, Identifiable {
     let id: Int
     let login: String
+    var avatar_url: String
 }
