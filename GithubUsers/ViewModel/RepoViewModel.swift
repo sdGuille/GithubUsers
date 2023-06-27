@@ -12,7 +12,7 @@ class RepoViewModel: ObservableObject {
     @Published var error: Error?
     @Published var searchText = ""
     @Published var repos: [Repo] = []
-//    @Published var ownersArray: Owner
+
     
     var filteredUsers: [Repo] {
         guard !searchText.isEmpty else { return repos }
@@ -22,7 +22,6 @@ class RepoViewModel: ObservableObject {
     
     
     var getUrl: String {
-//        let username = repos.map { $0.owner.login }
         return "https://api.github.com/users/sdguille/repos"
     }
     
