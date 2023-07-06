@@ -20,7 +20,6 @@ class RepoViewModel: ObservableObject {
     }
     
     
-    
     var getUrl: String {
         return "https://api.github.com/users/sdguille/repos"
     }

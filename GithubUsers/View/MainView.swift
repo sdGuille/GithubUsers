@@ -26,7 +26,6 @@ struct MainView: View {
             .navigationTitle("Github Users")
             .searchable(text: $viewModel.searchText, prompt: "Search Users")
             .task { viewModel.loadData() }
-            
             .onReceive(viewModel.$error, perform: { error in
                 if error != nil {
                     showAlert.toggle()
@@ -50,8 +49,4 @@ struct Mainview_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }
-}
-
-struct MyAlert {
-    
 }

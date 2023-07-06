@@ -11,7 +11,7 @@
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9B2A455F9500DAABB7 /* Repo.swift */; };
 		CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */; };
-		CF1EEDA02A45F8C300DAABB7 /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */; };
+		CF1EEDA02A45F8C300DAABB7 /* RepoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */; };
 		CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */; };
 		CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35672A34DD61006EAAD0 /* MainView.swift */; };
 		CF8E356A2A34DD62006EAAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E35692A34DD62006EAAD0 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF1EED9B2A455F9500DAABB7 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
-		CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
+		CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetail.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		CF8E35672A34DD61006EAAD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
 				CFA99A602A423F4200F65070 /* UserDetailView.swift */,
 				CF1EED992A454CD100DAABB7 /* WebView.swift */,
-				CF1EED9F2A45F8C300DAABB7 /* RepoView.swift */,
+				CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */,
-				CF1EEDA02A45F8C300DAABB7 /* RepoView.swift in Sources */,
+				CF1EEDA02A45F8C300DAABB7 /* RepoDetail.swift in Sources */,
 				CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
 				CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */,

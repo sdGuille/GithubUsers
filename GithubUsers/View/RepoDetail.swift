@@ -7,17 +7,18 @@
 
 import SwiftUI
 
-struct RepoView: View {
-    @StateObject var vm = RepoViewModel()
+struct RepoDetail: View {
     let user: String
+    let repos = ["Work on something good", "Working in other thing", "Hello World", "Hello Mami"]
+    
     
     var body: some View {
         NavigationStack {
-            List(vm.repos) { data in
-                Text("\(data.name): ")
+            List(repos, id: \.self) { data in
+                Text("\(data): ")
                     .font(.title2)
                     .bold()
-                Text(data.description ?? "No description")
+                Text(data.description )
                     .font(.subheadline)
             }
             .navigationTitle(user)
@@ -27,6 +28,6 @@ struct RepoView: View {
 
 struct RepoView_Previews: PreviewProvider {
     static var previews: some View {
-        RepoView(user: "sdGuille")
+        RepoDetail(user: "sdGuille")
     }
 }
