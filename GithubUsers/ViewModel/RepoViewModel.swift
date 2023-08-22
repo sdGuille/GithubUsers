@@ -12,6 +12,7 @@ class RepoViewModel: ObservableObject {
     @Published var error: Error?
     @Published var searchText = ""
     @Published var repos: [Repo] = []
+<<<<<<< Updated upstream
 
     
     var filteredUsers: [Repo] {
@@ -22,6 +23,13 @@ class RepoViewModel: ObservableObject {
     
     var getUrl: String {
         return "https://api.github.com/users/sdguille/repos"
+=======
+    @Published var owner = [Owner]()
+    
+    
+    var getUrl: String {
+        return "https://api.github.com/repositories"
+>>>>>>> Stashed changes
     }
     
     init(){
