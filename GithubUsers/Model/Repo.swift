@@ -10,9 +10,11 @@ import Foundation
 struct Repo: Codable, Identifiable {
     let id: Int
     let name: String
+    var full_name: String
     let html_url: String
     let description: String?
     let owner: Owner
+    let url: String
 }
 
 struct Owner: Codable, Identifiable {
