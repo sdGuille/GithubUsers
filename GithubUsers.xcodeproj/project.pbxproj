@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0D87672ABDDACF00F1C217 /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D87662ABDDACF00F1C217 /* UserDetailModel.swift */; };
+		CF0D87692ABDE0CB00F1C217 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D87682ABDE0CB00F1C217 /* DetailViewModel.swift */; };
+		CF0D876B2ABDE2A500F1C217 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D876A2ABDE2A500F1C217 /* Service.swift */; };
 		CF1EED982A45472800DAABB7 /* WebProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED972A45472800DAABB7 /* WebProfileView.swift */; };
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9B2A455F9500DAABB7 /* Repo.swift */; };
 		CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */; };
-		CF1EEDA02A45F8C300DAABB7 /* RepoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */; };
+		CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3012682AC296E400FE8BDF /* UserInfo.swift */; };
 		CF3D108F2AB21F760061C951 /* PracticeUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D108E2AB21F760061C951 /* PracticeUserViewModel.swift */; };
 		CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */; };
 		CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35672A34DD61006EAAD0 /* MainView.swift */; };
@@ -21,16 +24,20 @@
 		CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */; };
 		CF8E357E2A355E81006EAAD0 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357D2A355E81006EAAD0 /* ProfileRow.swift */; };
 		CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357F2A356CA2006EAAD0 /* CustomError.swift */; };
+		CF976A1E2AC21A8800B5914C /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF976A1D2AC21A8800B5914C /* ProfileDetailView.swift */; };
 		CFA99A612A423F4200F65070 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA99A602A423F4200F65070 /* UserDetailView.swift */; };
 		CFA99A632A42491100F65070 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA99A622A42491100F65070 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0D87662ABDDACF00F1C217 /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		CF0D87682ABDE0CB00F1C217 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CF0D876A2ABDE2A500F1C217 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CF1EED972A45472800DAABB7 /* WebProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebProfileView.swift; path = GithubUsers/View/Helpers/WebProfileView.swift; sourceTree = SOURCE_ROOT; };
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF1EED9B2A455F9500DAABB7 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CF1EED9D2A45614D00DAABB7 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
-		CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetail.swift; sourceTree = "<group>"; };
+		CF3012682AC296E400FE8BDF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF3D108E2AB21F760061C951 /* PracticeUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeUserViewModel.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 		CF8E357A2A34F518006EAAD0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CF8E357D2A355E81006EAAD0 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		CF8E357F2A356CA2006EAAD0 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		CF976A1D2AC21A8800B5914C /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		CFA99A602A423F4200F65070 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		CFA99A622A42491100F65070 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +64,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0D87622ABDDA7E00F1C217 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D87652ABDDAA600F1C217 /* View */,
+				CF0D87642ABDDA9F00F1C217 /* ViewModel */,
+				CF0D87632ABDDA9700F1C217 /* Model */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		CF0D87632ABDDA9700F1C217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D87662ABDDACF00F1C217 /* UserDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF0D87642ABDDA9F00F1C217 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D87682ABDE0CB00F1C217 /* DetailViewModel.swift */,
+				CF0D876A2ABDE2A500F1C217 /* Service.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF0D87652ABDDAA600F1C217 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF30126A2AC2971600FE8BDF /* Components */,
+				CF976A1D2AC21A8800B5914C /* ProfileDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF30126A2AC2971600FE8BDF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF3012682AC296E400FE8BDF /* UserInfo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CF3D10902AB225EE0061C951 /* Practicing */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +143,7 @@
 		CF8E35642A34DD61006EAAD0 /* GithubUsers */ = {
 			isa = PBXGroup;
 			children = (
+				CF0D87622ABDDA7E00F1C217 /* UserDetail */,
 				CF3D10902AB225EE0061C951 /* Practicing */,
 				CF8E35732A34DF94006EAAD0 /* App */,
 				CF8E35752A34DFB3006EAAD0 /* Model */,
@@ -144,7 +197,6 @@
 				CF8E35672A34DD61006EAAD0 /* MainView.swift */,
 				CFA99A602A423F4200F65070 /* UserDetailView.swift */,
 				CF1EED992A454CD100DAABB7 /* WebView.swift */,
-				CF1EED9F2A45F8C300DAABB7 /* RepoDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,19 +282,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1EED9E2A45614D00DAABB7 /* RepoViewModel.swift in Sources */,
-				CF1EEDA02A45F8C300DAABB7 /* RepoDetail.swift in Sources */,
 				CF1EED9C2A455F9500DAABB7 /* Repo.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
 				CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */,
 				CFA99A632A42491100F65070 /* CircleImage.swift in Sources */,
 				CF8E357E2A355E81006EAAD0 /* ProfileRow.swift in Sources */,
+				CF0D87672ABDDACF00F1C217 /* UserDetailModel.swift in Sources */,
 				CF1EED982A45472800DAABB7 /* WebProfileView.swift in Sources */,
 				CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */,
 				CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */,
+				CF976A1E2AC21A8800B5914C /* ProfileDetailView.swift in Sources */,
+				CF0D876B2ABDE2A500F1C217 /* Service.swift in Sources */,
 				CFA99A612A423F4200F65070 /* UserDetailView.swift in Sources */,
 				CF8E35792A34F17A006EAAD0 /* User.swift in Sources */,
 				CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */,
 				CF3D108F2AB21F760061C951 /* PracticeUserViewModel.swift in Sources */,
+				CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */,
+				CF0D87692ABDE0CB00F1C217 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GithubUsers/Preview Content\"";
+				DEVELOPMENT_TEAM = ZV39C2HC4G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -405,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GithubUsers/Preview Content\"";
+				DEVELOPMENT_TEAM = ZV39C2HC4G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
