@@ -28,7 +28,7 @@ struct UserInfo: View {
                     Text(location)
                         .fontWeight(.medium)
                 }
-                Text("Followers \(followers)")
+                Text("Followers ❤️ \(followers)")
                     .fontWeight(.semibold)
             }
         }

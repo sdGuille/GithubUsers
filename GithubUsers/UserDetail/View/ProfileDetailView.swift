@@ -11,6 +11,8 @@ struct ProfileDetailView: View {
     @StateObject var viewModel = DetailViewModel()
     var user: User
     
+    @EnvironmentObject var favorites: Favorites
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -23,12 +25,23 @@ struct ProfileDetailView: View {
                             .bold()
                     }
                     .padding()
-                    UserInfo(bio: viewModel.bio, company: viewModel.company,
-                             location: viewModel.location,
-                             followers: "\(viewModel.followers)")
+                    UserInfo(
+                        bio: viewModel.bio, company: viewModel.company,
+                        location: viewModel.location,
+                        followers: "\(viewModel.followers)"
+                    )
                 }
                 .padding()
                 Spacer()
+                Button(favorites.contains(user: user) ? "Remove from Favorites" : "Add to Favorites") {
+                    if favorites.contains(user: user) {
+                        favorites.remove(user)
+                    } else {
+                        favorites.add(user)
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .padding()
             }
             .task {
                 viewModel.urlString = user.url
@@ -37,10 +50,5 @@ struct ProfileDetailView: View {
         }
     }
 }
-
-//#Preview {
-//    ProfileDetailView()
-//}
-
 
 
