@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var viewModel = MainViewModel()
+    @StateObject var mainViewModel = MainViewModel(service: UserService())
     @State private var showAlert = false
     private let gridItems = [GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 8)]
     @StateObject var favorites = Favorites()
@@ -16,7 +16,7 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
                 VStack {
-                        List(viewModel.filteredUsers) { user in
+                        List(mainViewModel.filteredUsers) { user in
                             NavigationLink {
                                 ProfileDetailView(user: user)
                             } label: {
@@ -33,12 +33,12 @@ struct MainView: View {
                         }
                 }
                 .refreshable {
-                    viewModel.handleRefresh()
+                    await mainViewModel.handleRefresh()
                 }
                 .navigationTitle("Github Users")
-                .searchable(text: $viewModel.searchText, prompt: "Search Users")
-                .task { viewModel.loadData() }
-                .onReceive(viewModel.$error, perform: { error in
+                .searchable(text: $mainViewModel.searchText, prompt: "Search Users")
+                .task { await mainViewModel.loadData() }
+                .onReceive(mainViewModel.$error, perform: { error in
                     if error != nil {
                         showAlert.toggle()
                     }
@@ -47,7 +47,7 @@ struct MainView: View {
                     isPresented: $showAlert,
                     content: {
                         Alert(title: Text("Error"),
-                              message: Text(viewModel.error?.localizedDescription ?? ""),
+                              message: Text(mainViewModel.error?.localizedDescription ?? ""),
                               dismissButton: .default(Text("OK"))
                         )
                     }

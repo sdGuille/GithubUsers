@@ -8,48 +8,39 @@
 import Foundation
 
 class MainViewModel: ObservableObject {
-    @Published var error: Error?
+    @Published var error: CustomError?
     @Published var searchText = ""
-    @Published var myUsers: [User] = []
+    @Published var usersArray: [User] = []
+    
+    let urlString = "https://api.github.com/users"
+    
+    let service: UserProtocol
     
     var filteredUsers: [User] {
-        guard !searchText.isEmpty else { return myUsers }
-        return myUsers.filter { $0.login.localizedCaseInsensitiveContains(searchText) }
-    }
-
-    var urlString: String {
-        return "https://api.github.com/users"
+        guard !searchText.isEmpty else { return usersArray }
+        return usersArray.filter { $0.login.localizedCaseInsensitiveContains(searchText) }
     }
     
-    init() {
-        loadData()
+    func handleRefresh() async {
+        usersArray.removeAll()
+        await loadData()
     }
     
-    func handleRefresh() {
-        myUsers.removeAll()
-        loadData()
+    init(service: UserProtocol) {
+        self.service = service
     }
+    
 }
 
 extension MainViewModel {
     @MainActor
-    func fetchUsersAsync() async throws {
+    func loadData() async {
         do {
-            guard let url = URL(string: urlString) else { throw CustomError.invalidURL }
+            let userResponse: [User] = try await service.fetchData(urlString: urlString)
             
-            let (data, response) = try await URLSession.shared.data(from: url)
-            guard (response as?  HTTPURLResponse)?.statusCode == 200 else { throw CustomError.serverError }
-            guard let users = try? JSONDecoder().decode([User].self, from: data) else { throw CustomError.invalidData }
-            self.myUsers = users
-            
+            self.usersArray = userResponse
         } catch {
-            self.error = error
-        }
-    }
-    
-    func loadData() {
-        Task(priority: .medium) {
-            try await fetchUsersAsync()
+            self.error = error as? CustomError
         }
     }
 }
