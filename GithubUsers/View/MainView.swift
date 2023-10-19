@@ -21,7 +21,7 @@ struct MainView: View {
                                 ProfileDetailView(user: user)
                             } label: {
                                 HStack {
-                                    ProfileRow(image: user.avatar_url, title: user.login)
+                                    ProfileRow(image: user.avatarUrl, title: user.login)
                                     Spacer()
                                     if favorites.contains(user: user) {
                                         Image(systemName: "heart.fill")

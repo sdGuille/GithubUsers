@@ -19,8 +19,11 @@ class UserService: UserProtocol {
         guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw CustomError.serverError }
         
         do {
-            let user = try JSONDecoder().decode(T.self, from: data)
-            return user
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
+            let decoded = try decoder.decode(T.self, from: data)
+            return decoded
         } catch {
             throw CustomError.invalidData
         }
