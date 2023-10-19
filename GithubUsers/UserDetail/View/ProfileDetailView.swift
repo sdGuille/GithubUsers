@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileDetailView: View {
-    @StateObject var viewModel = DetailViewModel()
+    @StateObject var viewModel = DetailViewModel(service: UserService())
     var user: User
     
     @EnvironmentObject var favorites: Favorites
@@ -45,7 +45,7 @@ struct ProfileDetailView: View {
             }
             .task {
                 viewModel.urlString = user.url
-                viewModel.loadData()
+                await viewModel.loadData()
             }
         }
     }
