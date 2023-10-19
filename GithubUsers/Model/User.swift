@@ -10,9 +10,9 @@ import Foundation
 struct User: Codable, Identifiable, Hashable {
     var id: Int
     var login: String
-    var avatar_url: String
-    var repos_url: String
+    var avatarUrl: String
+    var reposUrl: String
     var type: String
-    var site_admin: Bool
+    var siteAdmin: Bool
     var url: String
 }
