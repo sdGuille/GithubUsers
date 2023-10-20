@@ -14,7 +14,6 @@
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3012682AC296E400FE8BDF /* UserInfo.swift */; };
 		CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30126B2AC31F7500FE8BDF /* Favorites.swift */; };
-		CF3D108F2AB21F760061C951 /* PracticeUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D108E2AB21F760061C951 /* PracticeUserViewModel.swift */; };
 		CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */; };
 		CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35672A34DD61006EAAD0 /* MainView.swift */; };
 		CF8E356A2A34DD62006EAAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E35692A34DD62006EAAD0 /* Assets.xcassets */; };
@@ -35,7 +34,6 @@
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF3012682AC296E400FE8BDF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF30126B2AC31F7500FE8BDF /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
-		CF3D108E2AB21F760061C951 /* PracticeUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeUserViewModel.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		CF8E35672A34DD61006EAAD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -111,22 +109,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		CF3D10902AB225EE0061C951 /* Practicing */ = {
-			isa = PBXGroup;
-			children = (
-				CF3D10912AB226C60061C951 /* viewModel */,
-			);
-			path = Practicing;
-			sourceTree = "<group>";
-		};
-		CF3D10912AB226C60061C951 /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CF3D108E2AB21F760061C951 /* PracticeUserViewModel.swift */,
-			);
-			path = viewModel;
-			sourceTree = "<group>";
-		};
 		CF8E35592A34DD61006EAAD0 = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +130,6 @@
 			children = (
 				CF115C142AD22DED009591D0 /* Services */,
 				CF0D87622ABDDA7E00F1C217 /* UserDetail */,
-				CF3D10902AB225EE0061C951 /* Practicing */,
 				CF8E35732A34DF94006EAAD0 /* App */,
 				CF8E35752A34DFB3006EAAD0 /* Model */,
 				CF8E35772A34DFCA006EAAD0 /* View */,
@@ -296,7 +277,6 @@
 				CF976A1E2AC21A8800B5914C /* ProfileDetailView.swift in Sources */,
 				CF8E35792A34F17A006EAAD0 /* User.swift in Sources */,
 				CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */,
-				CF3D108F2AB21F760061C951 /* PracticeUserViewModel.swift in Sources */,
 				CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */,
 				CF0D87692ABDE0CB00F1C217 /* DetailViewModel.swift in Sources */,
 			);
