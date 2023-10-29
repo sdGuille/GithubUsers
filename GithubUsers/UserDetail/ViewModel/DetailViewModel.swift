@@ -17,12 +17,10 @@ final class DetailViewModel: ObservableObject {
     @Published var location = ""
     @Published var followers = 0
     
-    
     var urlString = ""
     let service: UserProtocol
     
     
-
     init(service: UserProtocol) {
         self.service = service
     }
@@ -34,7 +32,6 @@ extension DetailViewModel {
         do {
             let userDeatilResponse: UserDetailModel = try await service.fetchData(urlString: urlString)
 
-            
             self.name = userDeatilResponse.name
             self.bio = userDeatilResponse.bio ?? "N/A"
             self.company = userDeatilResponse.company
