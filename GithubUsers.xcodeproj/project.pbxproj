@@ -14,6 +14,9 @@
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3012682AC296E400FE8BDF /* UserInfo.swift */; };
 		CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30126B2AC31F7500FE8BDF /* Favorites.swift */; };
+		CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFC42B73DD600053930C /* CalculatorView.swift */; };
+		CF8DEFCD2B73F2460053930C /* GithubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */; };
+		CF8DEFD42B73F8F20053930C /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFD32B73F8F20053930C /* CalculationTests.swift */; };
 		CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */; };
 		CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E35672A34DD61006EAAD0 /* MainView.swift */; };
 		CF8E356A2A34DD62006EAAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8E35692A34DD62006EAAD0 /* Assets.xcassets */; };
@@ -24,7 +27,18 @@
 		CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E357F2A356CA2006EAAD0 /* CustomError.swift */; };
 		CF976A1E2AC21A8800B5914C /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF976A1D2AC21A8800B5914C /* ProfileDetailView.swift */; };
 		CFA99A632A42491100F65070 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA99A622A42491100F65070 /* CircleImage.swift */; };
+		CFFFA0152AEDFE740065E49C /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFFA0142AEDFE740065E49C /* CustomSearchBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF8DEFCE2B73F2460053930C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8E355A2A34DD61006EAAD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8E35612A34DD61006EAAD0;
+			remoteInfo = GithubUsers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CF0D87662ABDDACF00F1C217 /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
@@ -34,6 +48,10 @@
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF3012682AC296E400FE8BDF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF30126B2AC31F7500FE8BDF /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		CF8DEFC42B73DD600053930C /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		CF8DEFCA2B73F2460053930C /* GithubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersTests.swift; sourceTree = "<group>"; };
+		CF8DEFD32B73F8F20053930C /* CalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTests.swift; sourceTree = "<group>"; };
 		CF8E35622A34DD61006EAAD0 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8E35652A34DD61006EAAD0 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		CF8E35672A34DD61006EAAD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -45,9 +63,17 @@
 		CF8E357F2A356CA2006EAAD0 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		CF976A1D2AC21A8800B5914C /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		CFA99A622A42491100F65070 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		CFFFA0142AEDFE740065E49C /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF8DEFC72B73F2460053930C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8E355F2A34DD61006EAAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,10 +135,20 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CF8DEFCB2B73F2460053930C /* GithubUsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */,
+				CF8DEFD32B73F8F20053930C /* CalculationTests.swift */,
+			);
+			path = GithubUsersTests;
+			sourceTree = "<group>";
+		};
 		CF8E35592A34DD61006EAAD0 = {
 			isa = PBXGroup;
 			children = (
 				CF8E35642A34DD61006EAAD0 /* GithubUsers */,
+				CF8DEFCB2B73F2460053930C /* GithubUsersTests */,
 				CF8E35632A34DD61006EAAD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8E35622A34DD61006EAAD0 /* GithubUsers.app */,
+				CF8DEFCA2B73F2460053930C /* GithubUsersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +174,8 @@
 				CF8E35692A34DD62006EAAD0 /* Assets.xcassets */,
 				CF8E356B2A34DD62006EAAD0 /* Preview Content */,
 				CF30126B2AC31F7500FE8BDF /* Favorites.swift */,
+				CFFFA0142AEDFE740065E49C /* CustomSearchBar.swift */,
+				CF8DEFC42B73DD600053930C /* CalculatorView.swift */,
 			);
 			path = GithubUsers;
 			sourceTree = "<group>";
@@ -197,6 +236,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF8DEFC92B73F2460053930C /* GithubUsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8DEFD02B73F2460053930C /* Build configuration list for PBXNativeTarget "GithubUsersTests" */;
+			buildPhases = (
+				CF8DEFC62B73F2460053930C /* Sources */,
+				CF8DEFC72B73F2460053930C /* Frameworks */,
+				CF8DEFC82B73F2460053930C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF8DEFCF2B73F2460053930C /* PBXTargetDependency */,
+			);
+			name = GithubUsersTests;
+			productName = GithubUsersTests;
+			productReference = CF8DEFCA2B73F2460053930C /* GithubUsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CF8E35612A34DD61006EAAD0 /* GithubUsers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF8E35702A34DD62006EAAD0 /* Build configuration list for PBXNativeTarget "GithubUsers" */;
@@ -221,9 +278,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					CF8DEFC92B73F2460053930C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = CF8E35612A34DD61006EAAD0;
+					};
 					CF8E35612A34DD61006EAAD0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -243,11 +304,19 @@
 			projectRoot = "";
 			targets = (
 				CF8E35612A34DD61006EAAD0 /* GithubUsers */,
+				CF8DEFC92B73F2460053930C /* GithubUsersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF8DEFC82B73F2460053930C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8E35602A34DD61006EAAD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,16 +329,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF8DEFC62B73F2460053930C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8DEFCD2B73F2460053930C /* GithubUsersTests.swift in Sources */,
+				CF8DEFD42B73F8F20053930C /* CalculationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8E355E2A34DD61006EAAD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */,
 				CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
 				CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */,
 				CF115C162AD22E19009591D0 /* GithubServices.swift in Sources */,
 				CFA99A632A42491100F65070 /* CircleImage.swift in Sources */,
 				CF8E357E2A355E81006EAAD0 /* ProfileRow.swift in Sources */,
+				CFFFA0152AEDFE740065E49C /* CustomSearchBar.swift in Sources */,
 				CF0D87672ABDDACF00F1C217 /* UserDetailModel.swift in Sources */,
 				CF1EED982A45472800DAABB7 /* WebProfileView.swift in Sources */,
 				CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */,
@@ -284,7 +364,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CF8DEFCF2B73F2460053930C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8E35612A34DD61006EAAD0 /* GithubUsers */;
+			targetProxy = CF8DEFCE2B73F2460053930C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CF8DEFD12B73F2460053930C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZV39C2HC4G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "github.com-sdguille.GithubUsersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubUsers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GithubUsers";
+			};
+			name = Debug;
+		};
+		CF8DEFD22B73F2460053930C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZV39C2HC4G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "github.com-sdguille.GithubUsersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubUsers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GithubUsers";
+			};
+			name = Release;
+		};
 		CF8E356E2A34DD62006EAAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -467,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF8DEFD02B73F2460053930C /* Build configuration list for PBXNativeTarget "GithubUsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8DEFD12B73F2460053930C /* Debug */,
+				CF8DEFD22B73F2460053930C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF8E355D2A34DD61006EAAD0 /* Build configuration list for PBXProject "GithubUsers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
