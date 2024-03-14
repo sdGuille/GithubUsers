@@ -14,6 +14,7 @@
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3012682AC296E400FE8BDF /* UserInfo.swift */; };
 		CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30126B2AC31F7500FE8BDF /* Favorites.swift */; };
+		CF49165C2BA3A56400ED1AB9 /* UsersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */; };
 		CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFC42B73DD600053930C /* CalculatorView.swift */; };
 		CF8DEFCD2B73F2460053930C /* GithubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */; };
 		CF8DEFD42B73F8F20053930C /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFD32B73F8F20053930C /* CalculationTests.swift */; };
@@ -48,6 +49,7 @@
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF3012682AC296E400FE8BDF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF30126B2AC31F7500FE8BDF /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMock.swift; sourceTree = "<group>"; };
 		CF8DEFC42B73DD600053930C /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		CF8DEFCA2B73F2460053930C /* GithubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersTests.swift; sourceTree = "<group>"; };
@@ -135,6 +137,47 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CF4916562BA3A4EC00ED1AB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF4916582BA3A4FA00ED1AB9 /* api */,
+				CF4916572BA3A4F300ED1AB9 /* domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF4916572BA3A4F300ED1AB9 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				CF4916592BA3A50C00ED1AB9 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		CF4916582BA3A4FA00ED1AB9 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		CF4916592BA3A50C00ED1AB9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CF49165A2BA3A51C00ED1AB9 /* user */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CF49165A2BA3A51C00ED1AB9 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E35782A34F17A006EAAD0 /* User.swift */,
+				CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 		CF8DEFCB2B73F2460053930C /* GithubUsersTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +208,7 @@
 		CF8E35642A34DD61006EAAD0 /* GithubUsers */ = {
 			isa = PBXGroup;
 			children = (
+				CF4916562BA3A4EC00ED1AB9 /* Core */,
 				CF115C142AD22DED009591D0 /* Services */,
 				CF0D87622ABDDA7E00F1C217 /* UserDetail */,
 				CF8E35732A34DF94006EAAD0 /* App */,
@@ -199,7 +243,6 @@
 		CF8E35752A34DFB3006EAAD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CF8E35782A34F17A006EAAD0 /* User.swift */,
 				CF8E357F2A356CA2006EAAD0 /* CustomError.swift */,
 			);
 			path = Model;
@@ -342,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF49165C2BA3A56400ED1AB9 /* UsersMock.swift in Sources */,
 				CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */,
 				CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,

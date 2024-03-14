@@ -6,11 +6,15 @@
 //
 
 import Foundation
+import Observation
 
+@available(iOS 17.0, *)
+@Observable
 class MainViewModel: ObservableObject {
-    @Published var error: CustomError?
-    @Published var searchText = ""
-    @Published var usersArray: [User] = []
+    var showError = false
+    var error: Error? = nil
+    var searchText = ""
+    var usersArray: [User] = []
     
     let urlString = "https://api.github.com/users"
     
@@ -29,18 +33,17 @@ class MainViewModel: ObservableObject {
     init(service: UserProtocol) {
         self.service = service
     }
-    
 }
 
+@available(iOS 17.0, *)
 extension MainViewModel {
     @MainActor
     func loadData() async {
         do {
             let userResponse: [User] = try await service.fetchData(urlString: urlString)
-            
             self.usersArray = userResponse
         } catch {
-            self.error = error as? CustomError
+            self.error = error
         }
     }
 }

@@ -11,7 +11,11 @@ import SwiftUI
 struct GithubUsersApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if #available(iOS 17.0, *) {
+                MainView()
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }

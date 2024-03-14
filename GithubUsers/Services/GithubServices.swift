@@ -16,7 +16,7 @@ class UserService: UserProtocol {
         guard let url = URL(string: urlString) else { throw CustomError.invalidURL }
         
         let (data, response) = try await URLSession.shared.data(from: url)
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw CustomError.serverError }
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw CustomError.invalidServerResponse }
         
         do {
             let decoder = JSONDecoder()
@@ -25,7 +25,9 @@ class UserService: UserProtocol {
             let decoded = try decoder.decode(T.self, from: data)
             return decoded
         } catch {
-            throw CustomError.invalidData
+            print(error.localizedDescription)
+            throw CustomError.invalidServerResponse
         }
+        
     }
 }
