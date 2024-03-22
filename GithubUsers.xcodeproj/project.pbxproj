@@ -14,7 +14,15 @@
 		CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1EED992A454CD100DAABB7 /* WebView.swift */; };
 		CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3012682AC296E400FE8BDF /* UserInfo.swift */; };
 		CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30126B2AC31F7500FE8BDF /* Favorites.swift */; };
+		CF34DCE62BA755C10069C4AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34DCE52BA755C10069C4AE /* APIManager.swift */; };
+		CF34DCE82BA758E90069C4AE /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34DCE72BA758E90069C4AE /* RequestManager.swift */; };
+		CF34DCEB2BA75A2B0069C4AE /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34DCEA2BA75A2B0069C4AE /* DataParser.swift */; };
 		CF49165C2BA3A56400ED1AB9 /* UsersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */; };
+		CF4916652BA4D58200ED1AB9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4916642BA4D58200ED1AB9 /* APIConstants.swift */; };
+		CF4916682BA4D69C00ED1AB9 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4916672BA4D69C00ED1AB9 /* RequestProtocol.swift */; };
+		CF49166A2BA4D77C00ED1AB9 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4916692BA4D77C00ED1AB9 /* RequestType.swift */; };
+		CF88D8A52BABA2C0003E07F1 /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88D8A42BABA2C0003E07F1 /* AuthTokenRequest.swift */; };
+		CF88D8A82BABA50B003E07F1 /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88D8A72BABA50B003E07F1 /* APIToken.swift */; };
 		CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFC42B73DD600053930C /* CalculatorView.swift */; };
 		CF8DEFCD2B73F2460053930C /* GithubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */; };
 		CF8DEFD42B73F8F20053930C /* CalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DEFD32B73F8F20053930C /* CalculationTests.swift */; };
@@ -49,7 +57,15 @@
 		CF1EED992A454CD100DAABB7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CF3012682AC296E400FE8BDF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF30126B2AC31F7500FE8BDF /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		CF34DCE52BA755C10069C4AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CF34DCE72BA758E90069C4AE /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		CF34DCEA2BA75A2B0069C4AE /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMock.swift; sourceTree = "<group>"; };
+		CF4916642BA4D58200ED1AB9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CF4916672BA4D69C00ED1AB9 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		CF4916692BA4D77C00ED1AB9 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		CF88D8A42BABA2C0003E07F1 /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
+		CF88D8A72BABA50B003E07F1 /* APIToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
 		CF8DEFC42B73DD600053930C /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		CF8DEFCA2B73F2460053930C /* GithubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8DEFCC2B73F2460053930C /* GithubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersTests.swift; sourceTree = "<group>"; };
@@ -137,6 +153,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CF34DCE42BA755A50069C4AE /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CF34DCE52BA755C10069C4AE /* APIManager.swift */,
+				CF34DCE72BA758E90069C4AE /* RequestManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		CF34DCE92BA75A0F0069C4AE /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				CF34DCEA2BA75A2B0069C4AE /* DataParser.swift */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
 		CF4916562BA3A4EC00ED1AB9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +190,11 @@
 		CF4916582BA3A4FA00ED1AB9 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				CF88D8A62BABA4FA003E07F1 /* model */,
+				CF34DCE92BA75A0F0069C4AE /* parser */,
+				CF34DCE42BA755A50069C4AE /* network */,
+				CF4916662BA4D68500ED1AB9 /* request */,
+				CF4916642BA4D58200ED1AB9 /* APIConstants.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -176,6 +214,32 @@
 				CF49165B2BA3A56400ED1AB9 /* UsersMock.swift */,
 			);
 			path = user;
+			sourceTree = "<group>";
+		};
+		CF4916662BA4D68500ED1AB9 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				CF88D8A32BABA2A1003E07F1 /* auth */,
+				CF4916672BA4D69C00ED1AB9 /* RequestProtocol.swift */,
+				CF4916692BA4D77C00ED1AB9 /* RequestType.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		CF88D8A32BABA2A1003E07F1 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				CF88D8A42BABA2C0003E07F1 /* AuthTokenRequest.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		CF88D8A62BABA4FA003E07F1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CF88D8A72BABA50B003E07F1 /* APIToken.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		CF8DEFCB2B73F2460053930C /* GithubUsersTests */ = {
@@ -387,9 +451,14 @@
 			files = (
 				CF49165C2BA3A56400ED1AB9 /* UsersMock.swift in Sources */,
 				CF8DEFC52B73DD600053930C /* CalculatorView.swift in Sources */,
+				CF34DCEB2BA75A2B0069C4AE /* DataParser.swift in Sources */,
+				CF49166A2BA4D77C00ED1AB9 /* RequestType.swift in Sources */,
+				CF88D8A82BABA50B003E07F1 /* APIToken.swift in Sources */,
 				CF30126C2AC31F7500FE8BDF /* Favorites.swift in Sources */,
+				CF34DCE62BA755C10069C4AE /* APIManager.swift in Sources */,
 				CF8E35682A34DD61006EAAD0 /* MainView.swift in Sources */,
 				CF1EED9A2A454CD100DAABB7 /* WebView.swift in Sources */,
+				CF4916652BA4D58200ED1AB9 /* APIConstants.swift in Sources */,
 				CF115C162AD22E19009591D0 /* GithubServices.swift in Sources */,
 				CFA99A632A42491100F65070 /* CircleImage.swift in Sources */,
 				CF8E357E2A355E81006EAAD0 /* ProfileRow.swift in Sources */,
@@ -399,10 +468,13 @@
 				CF8E357B2A34F518006EAAD0 /* MainViewModel.swift in Sources */,
 				CF8E35662A34DD61006EAAD0 /* GithubUsersApp.swift in Sources */,
 				CF976A1E2AC21A8800B5914C /* ProfileDetailView.swift in Sources */,
+				CF88D8A52BABA2C0003E07F1 /* AuthTokenRequest.swift in Sources */,
 				CF8E35792A34F17A006EAAD0 /* User.swift in Sources */,
 				CF8E35802A356CA2006EAAD0 /* CustomError.swift in Sources */,
 				CF3012692AC296E400FE8BDF /* UserInfo.swift in Sources */,
 				CF0D87692ABDE0CB00F1C217 /* DetailViewModel.swift in Sources */,
+				CF4916682BA4D69C00ED1AB9 /* RequestProtocol.swift in Sources */,
+				CF34DCE82BA758E90069C4AE /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
